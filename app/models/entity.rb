@@ -3,6 +3,6 @@ class Entity < ApplicationRecord
   has_many :expenses
   has_many :groups, through: :expenses
 
-	validates :name, presence: true
+  validates :name, presence: true
   validates :amount, presence: true
 end
