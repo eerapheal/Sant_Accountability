@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'entity/index'
+  get 'entity/new'
   get 'group/index'
   get 'group/new'
   get 'home/index'
