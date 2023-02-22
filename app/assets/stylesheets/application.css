@@ -37,9 +37,19 @@ body {
 
 @media (min-width: 400px) {
   body {
-    width: 400px;
+    width: 417px;
     margin: 0 auto 0 auto;
   }
+}
+
+.head-t {
+    color: var(--main-color);
+    font-size: 28px;
+    padding: 0 25px;
+}
+
+.welcome {
+    margin-top: 50px;
 }
 
 ul {
@@ -70,6 +80,7 @@ button {
   cursor: pointer;
 }
 
+/* splash screen styling */
 .splash-screen {
   display: flex;
   flex-direction: column;
@@ -100,6 +111,10 @@ button {
   color: var(--main-color);
 }
 
+/* LOGIN FORM */
+
+.login-section,
+.signup-section,
 .groups-section,
 .create-category-section,
 .expenses-section,
@@ -110,6 +125,8 @@ button {
   gap: 20px;
 }
 
+.login-button,
+.signup-button,
 .new-group,
 .create-group,
 .new-entity,
@@ -162,6 +179,8 @@ select {
   gap: 10px;
   color: var(--text-color);
 }
+
+/* groups page */
 
 .group-item,
 .transaction-item {

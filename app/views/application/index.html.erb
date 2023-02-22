@@ -1,9 +1,10 @@
 
 <% if !user_signed_in? %>
-<div class="splash-screen">
+<h1 class="head-t"> Let make some budget </h1>
+<div class="welcome">
 </div>
 <div class="registration-links">
-  <%= link_to "LOG IN", new_user_session_path, class: "btn" %>
+  <%= link_to "LOG IN", new_user_session_path, class: "btn btn-secondary" %>
   <%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-secondary" %>
 </div>
 <% else %>

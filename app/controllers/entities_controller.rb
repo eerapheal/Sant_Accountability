@@ -11,14 +11,10 @@ class EntitiesController < ApplicationController
   def create
     @entity = Entity.new(entity_params)
     @entity.expenses.build(group_id: params[:entity][:expenses][:group_id])
-  
     respond_to do |format|
       if @entity.save
         format.html { redirect_to group_path(@entity.expenses[0].group_id), notice: 'Entity was successfully created.' }
         format.json { render :show, status: :created, location: @entity }
-      else
-        format.html { render :new }
-        format.json { render json: @entity.errors, status: :unprocessable_entity }
       end
     end
   end
