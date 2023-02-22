@@ -10,13 +10,11 @@
 <p style="color: green"><%= notice %></p>
 
 
-
-
   <ul class="groups-lis">
   <% @groups.each do |group| %>
     <% if can? :read, group %>
     <li class="group-item">
-      <span><i class="<%= group.icon %> fa-3x"></i></span>
+      <span><img src= <%= group.icon %>alt="User profile picture" class="profile-pic"></span>
       <p> <%= group.name %> </p>
       <p> $<%= group.total_amount %></p>
       <p>
