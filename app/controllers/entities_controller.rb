@@ -7,7 +7,7 @@ class EntitiesController < ApplicationController
     @groups = Group.where(user: current_user)
     @expense = @entity.expenses.build
   end
-  
+
   def create
     @entity = Entity.new(entity_params)
     @entity.expenses.build(group_id: params[:entity][:expenses][:group_id])
