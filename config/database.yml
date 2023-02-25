@@ -85,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: Sant_Accountability_production
-  username: Sant_Accountability
-  password: <%= ENV["SANT_ACCOUNTABILITY_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
